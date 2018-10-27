@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintDimensionRatio="1:1"
+    app:layout_constraintHorizontal_weight="1"
+    app:layout_constraintVertical_weight="1"
+    android:background="@drawable/background"
+    tools:context=".Category">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="0dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="0dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="0dp" />
+
+    <ImageButton
+        android:id="@+id/first_canteen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#80000000"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:src="@drawable/ic_restaurant_black_24dp"
+        android:scaleType="center"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toTopOf="@+id/third_IT"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/second_FE"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/guideline7"
+        app:layout_constraintVertical_weight="0.5" />
+
+    <ImageButton
+        android:id="@+id/second_FE"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:background="#80000000"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:src="@drawable/ic_assignment_black_24dp"
+        android:scaleType="center"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toTopOf="@+id/fourth_EnTC"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/fifth_Sports"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintStart_toEndOf="@+id/first_canteen"
+        app:layout_constraintTop_toBottomOf="@+id/guideline7"
+        app:layout_constraintVertical_weight="0.5" />
+
+    <ImageButton
+        android:id="@+id/third_IT"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:background="#80000000"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:src="@drawable/ic_devices_black_24dp"
+        android:scaleType="center"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toTopOf="@+id/seventh_StudCount"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/fourth_EnTC"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/first_canteen"
+        app:layout_constraintVertical_weight="0.5" />
+
+    <ImageButton
+        android:id="@+id/fourth_EnTC"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#80000000"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:src="@drawable/ic_settings_input_antenna_black_24dp"
+        android:scaleType="center"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toTopOf="@+id/seventh_StudCount"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/fifth_Sports"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintStart_toEndOf="@+id/third_IT"
+        app:layout_constraintTop_toBottomOf="@+id/second_FE"
+        app:layout_constraintVertical_weight="0.5" />
+
+    <ImageButton
+        android:id="@+id/fifth_Sports"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:background="#80000000"
+        android:scaleX="0.95"
+        android:scaleY="0.95"
+        android:src="@drawable/ic_fitness_center_black_48dp"
+        android:scaleType="center"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toTopOf="@+id/eighth_comp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/sixth_Library"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/second_FE"
+        app:layout_constraintTop_toBottomOf="@+id/guideline7"
+        app:layout_constraintVertical_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/sagoe_ui"
+        android:text="Sports"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@id/fifth_Sports"
+        app:layout_constraintStart_toStartOf="@id/fifth_Sports" />
+
+    <ImageButton
+        android:id="@+id/sixth_Library"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="#80000000"
+        android:scaleX="0.95"
+        android:scaleY="0.95"
+        android:src="@drawable/ic_library_books_black_48dp"
+        android:scaleType="center"
+        android:onClick="onClick"
+        android:text="ImageButton"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/fifth_Sports"
+        app:layout_constraintTop_toTopOf="@+id/guideline7"
+        app:layout_constraintVertical_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/sagoe_ui"
+        android:text="Library"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/sixth_Library"
+        app:layout_constraintStart_toStartOf="@id/sixth_Library" />
+
+
+
+    <ImageButton
+        android:id="@+id/seventh_StudCount"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:background="#80000000"
+        android:scaleX="0.95"
+        android:scaleY="0.95"
+        android:src="@drawable/ic_directions_run_black_48dp"
+        android:scaleType="center"
+        android:text="ImageButton"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toTopOf="@+id/ninth_Pictoreal"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/eighth_comp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/third_IT"
+        app:layout_constraintVertical_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/sagoe_ui"
+        android:text="Student Counter"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/seventh_StudCount"
+        app:layout_constraintStart_toStartOf="@id/seventh_StudCount" />
+
+    <ImageButton
+        android:id="@+id/eighth_comp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#80000000"
+        android:layout_marginEnd="4dp"
+        android:scaleX="0.967"
+        android:scaleY="0.95"
+        android:src="@drawable/ic_laptop_mac_black_48dp"
+        android:scaleType="center"
+        android:text="ImageButton"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toTopOf="@+id/tenth_ACM"
+        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@+id/seventh_StudCount"
+        app:layout_constraintTop_toBottomOf="@+id/fifth_Sports"
+        app:layout_constraintVertical_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/sagoe_ui"
+        android:text="Computer Departent"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/eighth_comp"
+        app:layout_constraintStart_toStartOf="@id/eighth_comp" />
+
+    <ImageButton
+        android:id="@+id/ninth_Pictoreal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:background="#80000000"
+        android:src="@drawable/pictoreal"
+        android:scaleType="fitCenter"
+        android:scaleX="0.95"
+        android:scaleY="0.95"
+        android:text="ImageButton"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toTopOf="@+id/twelve_ArtCircle"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/tenth_ACM"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/seventh_StudCount"
+        app:layout_constraintVertical_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="@font/sagoe_ui"
+        android:text="Pictoreal"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@id/ninth_Pictoreal"
+        app:layout_constraintStart_toStartOf="@id/ninth_Pictoreal" />
+
+    <ImageButton
+        android:id="@+id/tenth_ACM"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#80000000"
+        android:src="@drawable/acm"
+        android:scaleType="fitCenter"
+        android:scaleX="0.95"
+        android:scaleY="0.95"
+        android:text="ImageButton"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toTopOf="@+id/thirteen_EDC"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/eleventh_IEEE"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/ninth_Pictoreal"
+        app:layout_constraintTop_toBottomOf="@+id/eighth_comp"
+        app:layout_constraintVertical_weight="1" />
+
+
+
+
+    <ImageButton
+        android:id="@+id/eleventh_IEEE"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:background="#80000000"
+        android:scaleX="0.95"
+
+        android:scaleY="0.95"
+        android:src="@drawable/ieee"
+        android:text="ImageButton"
+        android:scaleType="fitCenter"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toTopOf="@+id/TnPC"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/tenth_ACM"
+        app:layout_constraintTop_toBottomOf="@+id/eighth_comp"
+        app:layout_constraintVertical_weight="1" />
+
+
+
+
+    <ImageButton
+        android:id="@+id/twelve_ArtCircle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:background="#80000000"
+        android:src="@drawable/art_circle"
+        android:scaleType="fitCenter"
+        android:scaleX="0.95"
+        android:scaleY="0.95"
+        android:text="ImageButton"
+        android:onClick="onClick"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/thirteen_EDC"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/ninth_Pictoreal"
+        app:layout_constraintVertical_weight="1" />
+
+
+    <Button
+        android:id="@+id/thirteen_EDC"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#80000000"
+        android:fontFamily="@font/sagoe_ui"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:text="EDC"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toTopOf="@+id/fifteen_IET"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/fourteen_INC"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintStart_toEndOf="@+id/twelve_ArtCircle"
+        app:layout_constraintTop_toBottomOf="@+id/tenth_ACM"
+        app:layout_constraintVertical_weight="0.5" />
+
+    <Button
+        android:id="@+id/fifteen_IET"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#80000000"
+        android:fontFamily="@font/sagoe_ui"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:text="IET"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:onClick="onClick"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/sixteen_CSI"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintStart_toEndOf="@+id/twelve_ArtCircle"
+        app:layout_constraintTop_toBottomOf="@+id/thirteen_EDC"
+        app:layout_constraintVertical_weight="0.5" />
+
+    <Button
+        android:id="@+id/fourteen_INC"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#80000000"
+        android:fontFamily="@font/sagoe_ui"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:text="INC"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toTopOf="@+id/sixteen_CSI"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/TnPC"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintStart_toEndOf="@+id/thirteen_EDC"
+        app:layout_constraintTop_toBottomOf="@+id/tenth_ACM"
+        app:layout_constraintVertical_weight="0.5" />
+
+    <Button
+        android:id="@+id/sixteen_CSI"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#80000000"
+        android:fontFamily="@font/sagoe_ui"
+        android:padding="0dp"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:text="CSI"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:onClick="onClick"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/TnPC"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fifteen_IET"
+        app:layout_constraintTop_toBottomOf="@+id/fourteen_INC"
+        app:layout_constraintVertical_weight="0.5" />
+
+
+
+    <ImageButton
+        android:id="@+id/TnPC"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:background="#80000000"
+        android:src="@drawable/tnpc"
+        android:scaleType="fitCenter"
+        android:scaleX="0.95"
+        android:scaleY="0.95"
+        android:text="ImageButton"
+        android:onClick="onClick"
+        android:textAlignment="viewEnd"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/fourteen_INC"
+        app:layout_constraintTop_toBottomOf="@+id/eleventh_IEEE"
+        app:layout_constraintVertical_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/sagoe_ui"
+        android:text="TnPC"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/TnPC"
+        app:layout_constraintStart_toStartOf="@id/TnPC" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="twelve_ArtCircle,fourteen_INC,sixteen_CSI,thirteen_EDC,TnPC,fifteen_IET" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        app:itemBackground="@color/transparent"
+        app:itemIconTint="@color/milkwhite"
+        app:itemTextColor="@color/milkwhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
